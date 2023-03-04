@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book Search App - Search History</title>
+    <link rel="stylesheet" href="History Page.css">
+</head>
+<body>
+	<h1>Book Store App</h1>
+	<h1>Your Previous Searches</h1>
+	<ul>
+		{{#each searchHistory}}
+			<li><a href="searched.html?q={{this}}">{{this}}</a></li>
+		{{/each}}
+	</ul>
+	<button id="clear-history">Clear History</button>
+	<button id="search-button" type="submit"><a href="./Searched Page.html">Searched</a></button>
+	<script src="History Page.js"></script>
+</body>
+</html>

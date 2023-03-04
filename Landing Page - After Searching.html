@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book Search App</title>
+    <link rel="stylesheet" href="Landing Page - After Searching.css">
+</head>
+<body>
+	<h1>Book Store App</h1>
+	<form id="search-form">
+		<label for="search-query">Search For Books By Their Names</label>
+		<input type="text" id="search-query" name="search-query" value="">
+		
+		<button id="search-button" type="submit"><a href="./History Page.html">History</a></button>
+		
+		
+	</form>
+	<div id="search-results">
+		{{#if searchResults}}
+			{{#each searchResults}}
+				<div class="book">
+					<img src="{{thumbnail}}" alt="{{title}} cover">
+					<h2>{{title}}</h2>
+					<p>By {{author}}</p>
+					<p>{{description}}</p>
+				</div>
+			{{/each}}
+		{{else}}
+			<p>No results found.</p>
+		{{/if}}
+	</div>
+
+	<script src="Landing Page - After Searching.js"></script>
+</body>
+</html>

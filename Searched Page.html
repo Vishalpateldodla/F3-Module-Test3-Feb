@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book Search App - {{searchQuery}}</title>
+    <link rel="stylesheet" href="Searched Page.css">
+</head>
+<body>
+	<h1>Book Store App</h1>
+	<h1>Search Results</h1>
+	<div id="search-results">
+		{{#if searchResults}}
+			{{#each searchResults}}
+				<div class="book">
+					<img src="{{thumbnail}}" alt="{{title}} cover">
+					<h2>{{title}}</h2>
+					<p>By {{author}}</p>
+					<p>{{description}}</p>
+				</div>
+			{{/each}}
+		{{else}}
+			<p>No results found.</p>
+		{{/if}}
+	</div>
+
+	<script src="Searched Page.js"></script>
+</body>
+</html>

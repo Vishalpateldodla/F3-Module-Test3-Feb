@@ -1,0 +1,54 @@
+/* Styles for the search history page */
+body {
+  background-color: black;
+  color: white;
+}
+/* Heading styles */
+h1 {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  /* Search history list styles */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  li a {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Clear history button styles */
+  .clear-history {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .clear-history button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .clear-history button:hover {
+    background-color: #444;
+  }
+  
